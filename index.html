@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool Rental Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <h2>🛠️ Tool Rental Checkout</h2>
+        <p>Enter your details and the tool you are borrowing.</p>
+        
+        <form action="https://formspree.io/f/maqvzrwv" method="POST">
+            
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="Borrower Name" placeholder="John Doe" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="Borrower Email" placeholder="john@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tool">Tool Being Taken</label>
+                <input type="text" id="tool" name="Tool Name" placeholder="e.g. Cordless Drill" required>
+            </div>
+
+            <input type="hidden" name="_subject" value="New Tool Rental: Action Required">
+
+            <button type="submit" class="submit-btn">Complete Checkout</button>
+        </form>
+    </div>
+</body>
+</html>
